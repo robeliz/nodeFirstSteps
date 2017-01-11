@@ -1,0 +1,42 @@
+doctype html
+html(lang="es")
+head
+	title= pageTitle
+	script(type='text/javascript').
+		
+		
+	body
+		// Esto es un jodido comentario
+		
+		
+		h1= nombre
+		h2 #{hola}
+		#container.col
+			p You are amazing motherfucker
+			p A que esperas #{adjetivo}
+			- var hola = "Jose Luis Moreno";
+			- var myArray = ["Esto","es","un","puto","for"];
+			- var array2  = ["Esto","es","un","puto","each"];
+			- var array3  = [1,2,3];
+			- for (var i=0; i <= myArray.length -1 ;  i++)
+				h2 #{myArray[i]}
+		
+			if true 	
+				p.
+					Hola haz click #[a(href="http://www.marca.com") aqui] para ir a la caverna
+					
+			each item in array2
+				p= item 
+			
+			- var item = 2
+			p Ejemplo de switch
+			case item
+				when 1
+					p El item era 1
+				when 2
+					p El item era 2
+				when 3
+					p El item era 3
+				default
+					p El item no era ninguno
+				

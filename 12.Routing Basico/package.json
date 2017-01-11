@@ -1,0 +1,15 @@
+{
+  "name": "routing_basico",
+  "version": "1.0.0",
+  "description": "Ejemplo de routing basico con express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roberto Elizo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
+  }
+}
